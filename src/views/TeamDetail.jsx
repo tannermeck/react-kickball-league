@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { NavLink, useParams } from 'react-router-dom';
 import { getTeamById } from '../services/teams';
 
 function TeamDetail(){
@@ -21,11 +21,13 @@ function TeamDetail(){
     return (
         <>
             <h1>{team.name}</h1>
-            <h3>{team.city}, {team.state}</h3>
-            <h2>Players:</h2>
-            {team.players.map(player => (
-                <h3 key={player.id}>{player.name}</h3>
-            ))}
+            <h3>Location: {team.city}, {team.state}</h3>
+            <h1>Players:</h1>
+                {team.players.map(player => (
+                    <NavLink to={`/players/${player.id}`}>
+                        <h3 key={player.id}>{player.name}- {player.position}</h3>
+                    </NavLink>
+                ))}
         </>
     )
 }
