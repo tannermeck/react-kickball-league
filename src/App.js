@@ -4,6 +4,7 @@ import TeamList from './views/TeamList';
 import Home from './views/Home';
 import Header from './views/Header';
 import PlayerList from './views/PlayerList';
+import TeamDetail from './views/TeamDetail';
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
         <Header />
           <Switch>
             <Route exact path='/teams' render={(routeProps) => (<TeamList {...routeProps} /> )} />
+            <Route exact path='/teams/:id' render={(routeProps) => (<TeamDetail {...routeProps} /> )} />
             <Route exact path='/players' render={(routeProps) => (<PlayerList {...routeProps} /> )} />
             <Route exact path='/' render={(routeProps) => (<Home {...routeProps} /> )} />
           </Switch>

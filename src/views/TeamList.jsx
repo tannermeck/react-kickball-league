@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 import { getTeams } from '../services/teams';
 
 function TeamList(){
@@ -9,7 +10,7 @@ function TeamList(){
         async function getTeamsList(){
             const teamList = await getTeams();
             setTeams(teamList)
-            console.log('TEAMS', teamList)
+            // console.log('TEAMS', teamList)
             setLoading(false)
         }
         getTeamsList()
@@ -19,7 +20,16 @@ function TeamList(){
 
     return (
         <>
-            <h1>Hello from teams</h1>
+            <h1>Teams:</h1>
+            <ul>
+                {teams.map((team) => {
+                    return (
+                        <NavLink key={team.id} to={`/teams/${team.id}`}>
+                            <li key={team.id}>{team.name}</li>
+                        </NavLink>
+                    )
+                })}
+            </ul>
         </>
     )
 }
