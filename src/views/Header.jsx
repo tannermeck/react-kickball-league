@@ -5,7 +5,7 @@ function Header(){
         <>
             <NavLink to='/'>Home</NavLink>{' '}
             <NavLink to='/teams'>Teams</NavLink>{' '}
-            
+            <NavLink to='/players'>Players</NavLink>
         </>
     )
 }

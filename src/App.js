@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import TeamList from './views/TeamList';
 import Home from './views/Home';
 import Header from './views/Header';
+import PlayerList from './views/PlayerList';
 
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
         <Header />
           <Switch>
             <Route exact path='/teams' render={(routeProps) => (<TeamList {...routeProps} /> )} />
+            <Route exact path='/players' render={(routeProps) => (<PlayerList {...routeProps} /> )} />
             <Route exact path='/' render={(routeProps) => (<Home {...routeProps} /> )} />
           </Switch>
       </Router>
