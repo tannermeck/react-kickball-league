@@ -14,7 +14,7 @@ function TeamDetail(){
             setLoading(false)
         }
         loadTeams()
-    }, [])
+    }, [id])
     console.log(team)
     if (loading) return <h1>Loading Team Details...</h1>
 
@@ -24,7 +24,7 @@ function TeamDetail(){
             <h3>Location: {team.city}, {team.state}</h3>
             <h1>Players:</h1>
                 {team.players.map(player => (
-                    <NavLink to={`/players/${player.id}`}>
+                    <NavLink key={player.id} to={`/players/${player.id}`}>
                         <h3 key={player.id}>{player.name}- {player.position}</h3>
                     </NavLink>
                 ))}
