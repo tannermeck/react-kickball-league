@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render out a player detail component 1`] = `
+<div>
+  <h1>
+    Ron Long
+  </h1>
+  <h3>
+    Position: 
+    Outfield
+  </h3>
+  <h3>
+    Team: 
+    Bridge City Sneakers
+  </h3>
+  <h3>
+    Portland
+    , 
+    OR
+  </h3>
+</div>
+`;
