@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should create a home component 1`] = `
+<div>
+  <h1
+    class="homeHeader"
+  >
+    Welcome to Kickball League
+  </h1>
+</div>
+`;
