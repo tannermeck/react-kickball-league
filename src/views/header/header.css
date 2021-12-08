@@ -1,5 +1,6 @@
 .headerContainer {
     background: linear-gradient(blue, black 85%);
+    opacity: 0.75;
     height: 100px;
     display: flex;
     flex-direction: row;
@@ -8,10 +9,9 @@
     padding-left: 30px;
     padding-right: 30px;
 }
-.header:active {
-    text-decoration: underline;
-    color: blue;
-}
+/* .header.active {
+    color: white;
+} */
 .header {
     text-decoration: none;
     color: #B2AA8E;
@@ -21,4 +21,5 @@
 .header:hover {
     color: white;
 }
+
 

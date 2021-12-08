@@ -1,0 +1,34 @@
+.detailHeader {
+    color: darkblue;
+}
+a {
+    color: black;
+    font-weight:900;
+    margin: 5px;
+}
+li {
+    list-style: none;
+    font-weight: bolder;
+    padding: 10px;
+}
+ul {
+    width: 100vw;
+    padding-left: 0px;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.playerDetail {
+    color: black;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-right: 20px !important; */
+}
+.playerDetail h3 {
+    margin-right: 10px;
+}

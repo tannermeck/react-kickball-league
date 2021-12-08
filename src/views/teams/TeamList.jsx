@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { getTeams } from '../services/teams';
+import { getTeams } from '../../services/teams';
+import './teamdetail.css';
 
 function TeamList(){
     const [teams, setTeams] = useState([])
@@ -18,7 +19,7 @@ function TeamList(){
 
     return (
         <>
-            <h1>Teams:</h1>
+            <h1 className='detailHeader'>Teams:</h1>
             <ul>
                 {teams.map((team) => {
                     return (

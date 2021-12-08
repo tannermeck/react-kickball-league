@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink, useParams } from 'react-router-dom';
-import { getTeamById } from '../services/teams';
+import { getTeamById } from '../../services/teams';
+import './teamdetail.css';
 
 function TeamDetail(){
     const { id } = useParams();
@@ -19,14 +20,16 @@ function TeamDetail(){
 
     return (
         <>
-            <h1>{team.name}</h1>
-            <h3>Location: {team.city}, {team.state}</h3>
-            <h1>Players:</h1>
+            <h1 className='detailHeader'>{team.name}</h1>
+            <h3 className='detailHeader'>Location: {team.city}, {team.state}</h3>
+            <h1 className='detailHeader'>Players:</h1>
+            <div className='playerDetail'>
                 {team.players.map(player => (
-                    <NavLink key={player.id} to={`/players/${player.id}`}>
-                        <h3 key={player.id}>{player.name}- {player.position}</h3>
-                    </NavLink>
+                        <NavLink key={player.id} to={`/players/${player.id}`}>
+                            <h3 key={player.id}>{player.name}- {player.position}</h3>
+                        </NavLink>
                 ))}
+                </div>
         </>
     )
 }

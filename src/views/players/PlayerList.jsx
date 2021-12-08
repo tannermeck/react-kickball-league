@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
-import { getPlayers } from '../services/players';
+import { getPlayers } from '../../services/players';
+import '../teams/teamdetail.css';
 
 function PlayerList(){
     const [players, setPlayers] = useState([])
@@ -18,6 +19,7 @@ function PlayerList(){
     if (loading) return <h1>Loading Players...</h1>
     return (
         <>
+            <h1 className='detailHeader'>Players:</h1>
             <ul>
                 {players.map(player => {
                     return (

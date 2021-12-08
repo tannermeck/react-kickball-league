@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { getPlayerById } from '../services/players';
+import { getPlayerById } from '../../services/players';
 
 function PlayerDetail(){
     const { id } = useParams();

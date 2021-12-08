@@ -1,11 +1,11 @@
 import './App.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import TeamList from './views/TeamList';
-import Home from './views/Home';
-import Header from './views/Header';
-import PlayerList from './views/PlayerList';
-import TeamDetail from './views/TeamDetail';
-import PlayerDetail from './views/PlayerDetail';
+import TeamList from './views/teams/TeamList';
+import Home from './views/home/Home';
+import Header from './views/header/Header';
+import PlayerList from './views/players/PlayerList';
+import TeamDetail from './views/teams/TeamDetail';
+import PlayerDetail from './views/players/PlayerDetail';
 
 
 function App() {
