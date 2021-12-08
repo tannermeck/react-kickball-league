@@ -1,10 +1,10 @@
 import { useState, useEffect } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import { getTeamById } from '../../services/teams';
 import './teamdetail.css';
 
-function TeamDetail(){
-    const { id } = useParams();
+function TeamDetail({ match }){
+    const { id } = match.params
     const [team, setTeam] = useState({});
     const [loading, setLoading] = useState(true);
 

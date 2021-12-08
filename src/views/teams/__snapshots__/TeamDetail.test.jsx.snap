@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render out a team detail component 1`] = `
+<div>
+  <h1
+    class="detailHeader"
+  >
+    Bridge City Sneakers
+  </h1>
+  <h3
+    class="detailHeader"
+  >
+    Location: 
+    Portland
+    , 
+    OR
+  </h3>
+  <h1
+    class="detailHeader"
+  >
+    Players:
+  </h1>
+  <div
+    class="playerDetail"
+  >
+    <a
+      href="/players/1"
+    >
+      <h3>
+        Ben E. Jetts
+        - 
+        Pitcher
+      </h3>
+    </a>
+    <a
+      href="/players/2"
+    >
+      <h3>
+        Hans Olo
+        - 
+        Catcher
+      </h3>
+    </a>
+    <a
+      href="/players/3"
+    >
+      <h3>
+        Ron Long
+        - 
+        Outfield
+      </h3>
+    </a>
+    <a
+      href="/players/4"
+    >
+      <h3>
+        Shorty Biggum
+        - 
+        Shortstop
+      </h3>
+    </a>
+  </div>
+</div>
+`;

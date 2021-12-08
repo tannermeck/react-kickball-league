@@ -2,7 +2,7 @@ import { screen, render } from '@testing-library/react';
 import { MemoryRouter } from 'react-router-dom';
 import TeamList from './TeamList';
 
-it('should render out a playerlist component', async () => { 
+it('should render out a team list component', async () => { 
     const { container } = render(
                             <MemoryRouter>
                                 <TeamList />

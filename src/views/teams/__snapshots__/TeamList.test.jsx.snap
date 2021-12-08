@@ -53,3 +53,57 @@ exports[`should render out a playerlist component 1`] = `
   </ul>
 </div>
 `;
+
+exports[`should render out a team list component 1`] = `
+<div>
+  <h1
+    class="detailHeader"
+  >
+    Teams:
+  </h1>
+  <ul>
+    <a
+      href="/teams/10"
+    >
+      <li>
+        Acme USA
+      </li>
+    </a>
+    <a
+      href="/teams/1"
+    >
+      <li>
+        Bridge City Sneakers
+      </li>
+    </a>
+    <a
+      href="/teams/3"
+    >
+      <li>
+        Lakeville Thunderfeet
+      </li>
+    </a>
+    <a
+      href="/teams/4"
+    >
+      <li>
+        Mt. Hoodies
+      </li>
+    </a>
+    <a
+      href="/teams/2"
+    >
+      <li>
+        Stumptown Lumberjacks
+      </li>
+    </a>
+    <a
+      href="/teams/5"
+    >
+      <li>
+        Vancougers
+      </li>
+    </a>
+  </ul>
+</div>
+`;
