@@ -15,7 +15,6 @@ function TeamDetail(){
         }
         loadTeams()
     }, [id])
-    console.log(team)
     if (loading) return <h1>Loading Team Details...</h1>
 
     return (

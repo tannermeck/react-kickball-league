@@ -15,8 +15,8 @@ function PlayerDetail(){
         }
         getPlayer()
     }, [id])
-    console.log(player)
     if (loading) return <h1>Loading Player...</h1>
+
     return (
         <>
             <h1>{player.name}</h1>

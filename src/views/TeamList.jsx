@@ -10,12 +10,10 @@ function TeamList(){
         async function getTeamsList(){
             const teamList = await getTeams();
             setTeams(teamList)
-            // console.log('TEAMS', teamList)
             setLoading(false)
         }
         getTeamsList()
     }, [])
-
     if (loading) return <h1>Loading Teams!..</h1>
 
     return (
