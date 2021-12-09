@@ -24,10 +24,11 @@ function TeamDetail({ match }){
             <h3 className='detailHeader'>Location: {team.city}, {team.state}</h3>
             <h1 className='detailHeader'>Players:</h1>
             <div className='playerDetail'>
-                {team.players.map(player => (
-                        <NavLink key={player.id} to={`/players/${player.id}`}>
-                            <h3 key={player.id}>{player.name}- {player.position}</h3>
-                        </NavLink>
+                {team.players.map(player => (                   
+                    <h3 key={player.id}>{player.position}: 
+                    <NavLink key={player.id} to={`/players/${player.id}`}>
+                        {player.name}
+                    </NavLink></h3> 
                 ))}
                 </div>
         </>
