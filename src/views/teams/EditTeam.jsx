@@ -10,12 +10,6 @@ function EditTeam({ match }){
     const [city, setCity] = useState('')
     const [state, setState] = useState('')
 
-    // const findTeamInfo = async() => {
-    //     const team = await getTeamById(id)
-    //     setName(team.name)
-    //     setCity(team.city)
-    //     setState(team.state)
-    // }
     useEffect(() => {
         async function findTeamInfo(){
             const team = await getTeamById(id)
