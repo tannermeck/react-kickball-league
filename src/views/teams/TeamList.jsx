@@ -35,15 +35,16 @@ function TeamList(){
             <ul>
                 {teams.map((team) => {
                     return (
-                        <div key={team.id}>
+                        <div className='teamListContainer' key={team.id}>
                             <NavLink to={`/teams/${team.id}`}>
                                 <li key={team.id}>{team.name}</li>
                             </NavLink>
-                            <button 
+                            <button className='deleteButton'
                                 type='button' 
                                 onClick={() => handleDelete({id: team.id, name: team.name})}
                                 >{`Delete ${team.name}`}
                             </button>
+                            <NavLink className='editTeam' to={`/teams/edit/${team.id}`}>Edit Team</NavLink>
                         </div>
                     )
                 })}
