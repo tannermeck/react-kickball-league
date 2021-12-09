@@ -9,6 +9,7 @@ import PlayerDetail from './views/players/PlayerDetail';
 import AddTeam from './views/teams/AddTeam';
 import EditTeam from './views/teams/EditTeam';
 import EditPlayer from './views/players/EditPlayer';
+import AddPlayer from './views/players/AddPlayer';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
             <Route exact path='/teams/:id' render={(routeProps) => (<TeamDetail {...routeProps} /> )} />
             <Route exact path='/teams/edit/:id' component={EditTeam} />
             <Route exact path='/players' render={(routeProps) => (<PlayerList {...routeProps} /> )} />
+            <Route exact path='/players/new' component={AddPlayer} />
             <Route exact path='/players/:id' render={(routeProps) => (<PlayerDetail {...routeProps} /> )} />
             <Route exact path='/players/edit/:id' component={EditPlayer} />
             <Route exact path='/' render={(routeProps) => (<Home {...routeProps} /> )} />
