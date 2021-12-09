@@ -28,6 +28,7 @@ function AddTeam(){
                     setState={setState}
                     handleSubmit={handleSubmit}
                 />
+                <button type='submit' onClick={handleSubmit}>Add New Team</button>
             </fieldset>
         </div>
     )

@@ -23,9 +23,12 @@ function PlayerList(){
             <ul>
                 {players.map(player => {
                     return (
-                    <NavLink key={player.id} to={`/players/${player.id}`}>
-                        <li key={player.id}>{player.name}</li>
-                    </NavLink>
+                    <div key={player.id}>
+                        <NavLink  to={`/players/${player.id}`}>
+                            <li key={player.id}>{player.name}</li>
+                        </NavLink>
+                        <NavLink className='editTeam' to={`/players/edit/${player.id}`}>Edit Player</NavLink>
+                    </div>
                     )
                 })}
             </ul>
