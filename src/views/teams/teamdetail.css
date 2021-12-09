@@ -1,5 +1,17 @@
 .detailHeader {
     color: darkblue;
+    display: flex;
+    justify-content: center;
+}
+.newTeamLink {
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 5px;
+    background-color: white;
+    opacity: 0.65;
+}
+.newTeamLink:hover {
+    background-color: darkcyan;
 }
 a {
     color: black;
@@ -14,7 +26,6 @@ li {
 ul {
     width: 100vw;
     padding-left: 0px;
-    /* text-align: center; */
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

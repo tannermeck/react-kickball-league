@@ -20,6 +20,7 @@ function TeamList(){
     return (
         <>
             <h1 className='detailHeader'>Teams:</h1>
+            <NavLink className='newTeamLink' to='/teams/new'>Add New Team</NavLink>
             <ul>
                 {teams.map((team) => {
                     return (

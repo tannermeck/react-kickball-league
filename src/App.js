@@ -6,6 +6,7 @@ import Header from './views/header/Header';
 import PlayerList from './views/players/PlayerList';
 import TeamDetail from './views/teams/TeamDetail';
 import PlayerDetail from './views/players/PlayerDetail';
+import AddTeam from './views/teams/AddTeam';
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
         <Header />
           <Switch>
             <Route exact path='/teams' render={(routeProps) => (<TeamList {...routeProps} /> )} />
+            <Route exact path='/teams/new' component={AddTeam} />
             <Route exact path='/teams/:id' render={(routeProps) => (<TeamDetail {...routeProps} /> )} />
             <Route exact path='/players' render={(routeProps) => (<PlayerList {...routeProps} /> )} />
             <Route exact path='/players/:id' render={(routeProps) => (<PlayerDetail {...routeProps} /> )} />
