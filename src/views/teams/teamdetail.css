@@ -75,4 +75,5 @@ ul {
 }
 .editTeam:hover {
     background-color: darkcyan;
+    color: black;
 }
