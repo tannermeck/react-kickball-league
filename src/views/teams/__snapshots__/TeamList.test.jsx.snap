@@ -1,59 +1,5 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`should render out a playerlist component 1`] = `
-<div>
-  <h1
-    class="detailHeader"
-  >
-    Teams:
-  </h1>
-  <ul>
-    <a
-      href="/teams/10"
-    >
-      <li>
-        Acme USA
-      </li>
-    </a>
-    <a
-      href="/teams/1"
-    >
-      <li>
-        Bridge City Sneakers
-      </li>
-    </a>
-    <a
-      href="/teams/3"
-    >
-      <li>
-        Lakeville Thunderfeet
-      </li>
-    </a>
-    <a
-      href="/teams/4"
-    >
-      <li>
-        Mt. Hoodies
-      </li>
-    </a>
-    <a
-      href="/teams/2"
-    >
-      <li>
-        Stumptown Lumberjacks
-      </li>
-    </a>
-    <a
-      href="/teams/5"
-    >
-      <li>
-        Vancougers
-      </li>
-    </a>
-  </ul>
-</div>
-`;
-
 exports[`should render out a team list component 1`] = `
 <div>
   <h1
@@ -61,49 +7,82 @@ exports[`should render out a team list component 1`] = `
   >
     Teams:
   </h1>
+  <a
+    class="newTeamLink"
+    href="/teams/new"
+  >
+    Add New Team
+  </a>
   <ul>
-    <a
-      href="/teams/10"
+    <div
+      class="teamListContainer"
     >
-      <li>
-        Acme USA
-      </li>
-    </a>
-    <a
-      href="/teams/1"
+      <a
+        href="/teams/1"
+      >
+        <li>
+          Bridge City Sneakers
+        </li>
+      </a>
+      <button
+        class="deleteButton"
+        type="button"
+      >
+        Delete Bridge City Sneakers
+      </button>
+      <a
+        class="editTeam"
+        href="/teams/edit/1"
+      >
+        Edit Team
+      </a>
+    </div>
+    <div
+      class="teamListContainer"
     >
-      <li>
-        Bridge City Sneakers
-      </li>
-    </a>
-    <a
-      href="/teams/3"
+      <a
+        href="/teams/15"
+      >
+        <li>
+          Jail Blazers
+        </li>
+      </a>
+      <button
+        class="deleteButton"
+        type="button"
+      >
+        Delete Jail Blazers
+      </button>
+      <a
+        class="editTeam"
+        href="/teams/edit/15"
+      >
+        Edit Team
+      </a>
+    </div>
+    <div
+      class="teamListContainer"
     >
-      <li>
-        Lakeville Thunderfeet
-      </li>
-    </a>
-    <a
-      href="/teams/4"
-    >
-      <li>
-        Mt. Hoodies
-      </li>
-    </a>
-    <a
-      href="/teams/2"
-    >
-      <li>
-        Stumptown Lumberjacks
-      </li>
-    </a>
-    <a
-      href="/teams/5"
-    >
-      <li>
-        Vancougers
-      </li>
-    </a>
+      <a
+        href="/teams/17"
+      >
+        <li>
+          Peter Pipers
+        </li>
+      </a>
+      <button
+        class="deleteButton"
+        type="button"
+      >
+        Delete Peter Pipers
+      </button>
+      <a
+        class="editTeam"
+        href="/teams/edit/17"
+      >
+        Edit Team
+      </a>
+    </div>
   </ul>
 </div>
 `;
