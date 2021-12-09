@@ -5,7 +5,7 @@ exports[`should render out a team detail component 1`] = `
   <h1
     class="detailHeader"
   >
-    Bridge City Sneakers
+    My Team
   </h1>
   <h3
     class="detailHeader"
@@ -13,8 +13,13 @@ exports[`should render out a team detail component 1`] = `
     Location: 
     Portland
     , 
-    OR
+    Or
   </h3>
+  <a
+    href="/teams/edit/1"
+  >
+    Edit My Team
+  </a>
   <h1
     class="detailHeader"
   >
@@ -22,43 +27,6 @@ exports[`should render out a team detail component 1`] = `
   </h1>
   <div
     class="playerDetail"
-  >
-    <a
-      href="/players/1"
-    >
-      <h3>
-        Ben E. Jetts
-        - 
-        Pitcher
-      </h3>
-    </a>
-    <a
-      href="/players/2"
-    >
-      <h3>
-        Hans Olo
-        - 
-        Catcher
-      </h3>
-    </a>
-    <a
-      href="/players/3"
-    >
-      <h3>
-        Ron Long
-        - 
-        Outfield
-      </h3>
-    </a>
-    <a
-      href="/players/4"
-    >
-      <h3>
-        Shorty Biggum
-        - 
-        Shortstop
-      </h3>
-    </a>
-  </div>
+  />
 </div>
 `;
