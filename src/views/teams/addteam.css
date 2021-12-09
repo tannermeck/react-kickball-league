@@ -11,6 +11,7 @@ form {
     flex-direction: column;
     align-items: center;
     width: fit-content;
+    margin:auto;
 }
 label {
     padding-bottom: 5px;
@@ -24,4 +25,10 @@ button {
 button:hover {
     cursor: pointer;
     background-color:darkcyan;
+}
+select {
+    margin-top: 5px;
+}
+a:hover {
+    color: darkcyan;
 }

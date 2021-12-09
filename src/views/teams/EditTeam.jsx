@@ -2,6 +2,8 @@ import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import TeamForm from '../../components/TeamForm';
 import { getTeamById, updateTeamById } from '../../services/teams';
+import './addteam.css';
+
 
 function EditTeam({ match }){
     const { id } = match.params;
@@ -28,7 +30,7 @@ function EditTeam({ match }){
     return (
         <div className='formContainer'>
             <fieldset>
-                <legend>{`Edit Team ${name}`}</legend>
+                <legend>{`Edit the ${name}`}</legend>
                 <TeamForm 
                     name={name} 
                     city={city} 

@@ -22,6 +22,7 @@ function TeamDetail({ match }){
         <>
             <h1 className='detailHeader'>{team.name}</h1>
             <h3 className='detailHeader'>Location: {team.city}, {team.state}</h3>
+            <NavLink to={`/teams/edit/${team.id}`} >{`Edit ${team.name}`}</NavLink>
             <h1 className='detailHeader'>Players:</h1>
             <div className='playerDetail'>
                 {team.players.map(player => (                   

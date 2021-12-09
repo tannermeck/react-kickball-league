@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { createPlayer } from '../../services/players';
 import { getTeams } from '../../services/teams';
+import '../teams/addteam.css'
 
 function AddPlayer(){
     const history = useHistory();
@@ -29,11 +30,12 @@ function AddPlayer(){
             <legend>Add Player</legend>
             <form onSubmit={handleSubmit}>
                 <label htmlFor='name'>Name:</label>
-                <input id='name' name='name' value={name} onChange={({target}) => setName(target.value)}/>
+                <input id='name' name='name' value={name} onChange={({target}) => setName(target.value)} required/>
 
                 <label htmlFor='position'>Position:</label>
-                <input id='position' name='position' value={position} onChange={({target}) => setPosition(target.value)}/>
+                <input id='position' name='position' value={position} onChange={({target}) => setPosition(target.value)} required/>
 
+                <label>Team:</label>
                 <select value={teamId} onChange={(e) => setTeamId(e.target.value)}>
                     {teams.map((team) => (
                         <option key={team.id} value={team.id}>{team.name}</option>

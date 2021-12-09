@@ -2,6 +2,7 @@
     color: darkblue;
     display: flex;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .newTeamLink {
     border: 2px solid black;
@@ -11,7 +12,7 @@
     color:white;
     border: 2px solid white;
     border-radius: 4px;
-    box-shadow: 2px 2px 2px 2px white;
+    /* box-shadow: 2px 2px 2px 2px white; */
     opacity: 0.65;
 }
 .newTeamLink:hover {
@@ -53,6 +54,7 @@ ul {
 }
 .playerDetail h3 {
     margin-right: 10px;
+    margin-top: 0px;
 }
 .deleteButton {
     background-color: red;

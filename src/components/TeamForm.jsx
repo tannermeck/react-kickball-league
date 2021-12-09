@@ -1,3 +1,5 @@
+import '../views/teams/addteam.css';
+
 function TeamForm({ name, city, state, setName, setCity, setState, handleSubmit}){
     return (
     <form onSubmit={handleSubmit}>

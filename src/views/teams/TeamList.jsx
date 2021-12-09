@@ -21,8 +21,12 @@ function TeamList(){
     const handleDelete = async({ id, name }) => {
         const confirmDelete = window.confirm(`Are you sure you want to delete the ${name}`)
         if (confirmDelete){
-            await deleteTeamById(id)
-            await loadTeams()
+            try {
+                await deleteTeamById(id)
+                await loadTeams()
+            } catch (error) {
+                alert(error.message)
+            }
         }
     }
 
