@@ -61,5 +61,4 @@ it('should edit a player and return to the player list page', async () => {
     userEvent.click(button);
     })
     await screen.findByText(/Loading/i)
-    
 });

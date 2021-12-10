@@ -1,4 +1,4 @@
-import { screen, render, waitFor } from '@testing-library/react';
+import { screen, render } from '@testing-library/react';
 import { setupServer } from 'msw/node';
 import { rest } from 'msw';
 import { Route, Router } from 'react-router-dom';

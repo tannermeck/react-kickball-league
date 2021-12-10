@@ -28,7 +28,7 @@ function AddTeam(){
                     setState={setState}
                     handleSubmit={handleSubmit}
                 />
-                <button type='submit' onClick={handleSubmit}>Add New Team</button>
+                <button aria-label='add team submit' type='submit' onClick={handleSubmit}>Add New Team</button>
             </fieldset>
         </div>
     )
