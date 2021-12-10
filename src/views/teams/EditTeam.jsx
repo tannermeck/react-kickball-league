@@ -40,7 +40,7 @@ function EditTeam({ match }){
                     setState={setState}
                     handleSubmit={handleSubmit}
                 />
-                <button type='submit' onClick={handleSubmit}>{`Edit ${name}`}</button>
+                <button aria-label='edit team submit' type='submit' onClick={handleSubmit}>{`Edit ${name}`}</button>
             </fieldset>
         </div>
     )
