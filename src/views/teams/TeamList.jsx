@@ -17,6 +17,7 @@ function TeamList(){
     useEffect(() => {
             loadTeams()
     }, [])
+    
 
     const handleDelete = async({ id, name }) => {
         const confirmDelete = window.confirm(`Are you sure you want to delete the ${name}`)

@@ -36,7 +36,7 @@ function AddPlayer(){
                 <input id='position' name='position' value={position} onChange={({target}) => setPosition(target.value)} required/>
 
                 <label>Team:</label>
-                <select value={teamId} onChange={(e) => setTeamId(e.target.value)}>
+                <select aria-label='select team' value={teamId} onChange={(e) => setTeamId(e.target.value)}>
                     {teams.map((team) => (
                         <option key={team.id} value={team.id}>{team.name}</option>
                         ))
