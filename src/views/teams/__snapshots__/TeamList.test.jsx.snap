@@ -21,64 +21,18 @@ exports[`should render out a team list component 1`] = `
         href="/teams/1"
       >
         <li>
-          Bridge City Sneakers
+          My Team
         </li>
       </a>
       <button
         class="deleteButton"
         type="button"
       >
-        Delete Bridge City Sneakers
+        Delete My Team
       </button>
       <a
         class="editTeam"
         href="/teams/edit/1"
-      >
-        Edit Team
-      </a>
-    </div>
-    <div
-      class="teamListContainer"
-    >
-      <a
-        href="/teams/15"
-      >
-        <li>
-          Jail Blazers
-        </li>
-      </a>
-      <button
-        class="deleteButton"
-        type="button"
-      >
-        Delete Jail Blazers
-      </button>
-      <a
-        class="editTeam"
-        href="/teams/edit/15"
-      >
-        Edit Team
-      </a>
-    </div>
-    <div
-      class="teamListContainer"
-    >
-      <a
-        href="/teams/17"
-      >
-        <li>
-          Peter Pipers
-        </li>
-      </a>
-      <button
-        class="deleteButton"
-        type="button"
-      >
-        Delete Peter Pipers
-      </button>
-      <a
-        class="editTeam"
-        href="/teams/edit/17"
       >
         Edit Team
       </a>

@@ -7,112 +7,35 @@ exports[`should render out a playerlist component 1`] = `
   >
     Players:
   </h1>
+  <a
+    class="newTeamLink"
+    href="/players/new"
+  >
+    Add New Player
+  </a>
   <ul>
-    <a
-      href="/players/1"
+    <div
+      class="teamListContainer"
     >
-      <li>
-        Ben E. Jetts
-      </li>
-    </a>
-    <a
-      href="/players/12"
-    >
-      <li>
-        Betty Grey
-      </li>
-    </a>
-    <a
-      href="/players/7"
-    >
-      <li>
-        Bud E. Guy
-      </li>
-    </a>
-    <a
-      href="/players/8"
-    >
-      <li>
-        Buster Rimes
-      </li>
-    </a>
-    <a
-      href="/players/9"
-    >
-      <li>
-        Deb E. Downer
-      </li>
-    </a>
-    <a
-      href="/players/13"
-    >
-      <li>
-        Dwayne Elizondo Mountain Dew Herbert Camacho
-      </li>
-    </a>
-    <a
-      href="/players/15"
-    >
-      <li>
-        Frito Pendejo
-      </li>
-    </a>
-    <a
-      href="/players/5"
-    >
-      <li>
-        Gary Coolman
-      </li>
-    </a>
-    <a
-      href="/players/2"
-    >
-      <li>
-        Hans Olo
-      </li>
-    </a>
-    <a
-      href="/players/10"
-    >
-      <li>
-        Jayne Phonda
-      </li>
-    </a>
-    <a
-      href="/players/14"
-    >
-      <li>
-        Joe Bauers
-      </li>
-    </a>
-    <a
-      href="/players/11"
-    >
-      <li>
-        Kara Whollot
-      </li>
-    </a>
-    <a
-      href="/players/3"
-    >
-      <li>
-        Ron Long
-      </li>
-    </a>
-    <a
-      href="/players/4"
-    >
-      <li>
-        Shorty Biggum
-      </li>
-    </a>
-    <a
-      href="/players/6"
-    >
-      <li>
-        Terry Cruise
-      </li>
-    </a>
+      <a
+        href="/players/1"
+      >
+        <li>
+          Amber
+        </li>
+      </a>
+      <button
+        class="deleteButton"
+      >
+        Delete Amber
+      </button>
+      <a
+        class="editTeam"
+        href="/players/edit/1"
+      >
+        Edit Amber
+      </a>
+    </div>
   </ul>
 </div>
 `;

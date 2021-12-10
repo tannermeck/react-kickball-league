@@ -3,20 +3,25 @@
 exports[`should render out a player detail component 1`] = `
 <div>
   <h1>
-    Ron Long
+    Amber
   </h1>
   <h3>
     Position: 
-    Outfield
+    organizer
   </h3>
   <h3>
     Team: 
-    Bridge City Sneakers
+    Peter Pipers
   </h3>
   <h3>
-    Portland
+    Seattle
     , 
-    OR
+    Wa
   </h3>
+  <a
+    href="/players/edit/1"
+  >
+    Edit Player
+  </a>
 </div>
 `;
