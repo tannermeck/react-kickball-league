@@ -1,4 +1,4 @@
-import { screen, render, waitFor, findByText } from '@testing-library/react';
+import { screen, render, waitFor } from '@testing-library/react';
 import { setupServer } from 'msw/node';
 import { rest } from 'msw';
 import { Route, Router } from 'react-router-dom';
@@ -28,21 +28,11 @@ const worker = setupServer(
             ctx.json([fakeTeam])
         )
     }),
-    // rest.post('https://bmugikqtddktbuecxyqi.supabase.co/rest/v1/teams', (req, res, ctx) => {
-    //     return res(
-    //         ctx.json([fakeTeam])
-    //     )
-    // }),
     rest.get('https://bmugikqtddktbuecxyqi.supabase.co/rest/v1/players', (req, res, ctx) => {
         return res(
             ctx.json([fakePlayer])
         )
-    }),
-    // rest.post('https://bmugikqtddktbuecxyqi.supabase.co/rest/v1/players', (req, res, ctx) => {
-    //     return res(
-    //         ctx.json([fakePlayer])
-    //     )
-    // })
+    })
 );
 
 beforeAll(() => {
@@ -70,10 +60,6 @@ it('should edit a player and return to the player list page', async () => {
     userEvent.type(positionInput, 'Outfielder');
     userEvent.click(button);
     })
-    screen.debug()
-    
     await screen.findByText(/Loading/i)
-    // const newPlayer = await screen.findByText(/New Player Name/i)
-    // expect(newPlayer).toBeInTheDocument();
-    // screen.debug()
+    
 });
