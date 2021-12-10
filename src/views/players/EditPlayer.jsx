@@ -33,7 +33,7 @@ function EditPlayer({match}){
                     <label htmlFor='position'>Position:</label>
                     <input id='position' name='position' type='text' value={position} onChange={({target})=> setPosition(target.value)} required/>
                 </form>
-                <button onClick={handlePlayerSubmit}>{`Edit ${name}`}</button>
+                <button aria-label='edit submit' onClick={handlePlayerSubmit}>{`Edit ${name}`}</button>
             </fieldset>
         </div>
     )
