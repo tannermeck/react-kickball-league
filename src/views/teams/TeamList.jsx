@@ -26,7 +26,7 @@ function TeamList(){
                 await deleteTeamById(id)
                 await loadTeams()
             } catch (error) {
-                alert(error.message)
+                alert("Must delete all of the team's players before deleting the team.")
             }
         }
     }
