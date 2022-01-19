@@ -1,0 +1,79 @@
+.detailHeader {
+    color: darkblue;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.newTeamLink {
+    border: 2px solid black;
+    text-decoration: none;
+    padding: 5px;
+    background-color: black;
+    color:white;
+    border: 2px solid white;
+    border-radius: 4px;
+    /* box-shadow: 2px 2px 2px 2px white; */
+    opacity: 0.65;
+}
+.newTeamLink:hover {
+    background-color: darkcyan;
+    color: black;
+    box-shadow: none;
+}
+.teamListContainer {
+    display: flex;
+    flex-direction: column;
+    margin-right: 15px;
+}
+a {
+    color: black;
+    font-weight:900;
+    margin: 5px;
+}
+li {
+    list-style: none;
+    font-weight: bolder;
+    padding: 10px;
+}
+ul {
+    width: 100vw;
+    padding-left: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+.playerDetail {
+    color: black;
+    display: flex;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* margin-right: 20px !important; */
+}
+.playerDetail h3 {
+    margin-right: 10px;
+    margin-top: 0px;
+}
+.deleteButton {
+    background-color: red;
+    font-weight: bold;
+}
+.editTeam {
+    border: 2px solid black;
+    background-color: green;
+    border-radius: 4px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 5px;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+    font-size: small;
+    font-weight: bold;
+}
+.editTeam:hover {
+    background-color: darkcyan;
+    color: black;
+}

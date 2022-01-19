@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render out a playerlist component 1`] = `
+<div>
+  <h1
+    class="detailHeader"
+  >
+    Players:
+  </h1>
+  <a
+    class="newTeamLink"
+    href="/players/new"
+  >
+    Add New Player
+  </a>
+  <ul>
+    <div
+      class="teamListContainer"
+    >
+      <a
+        href="/players/1"
+      >
+        <li>
+          Amber
+        </li>
+      </a>
+      <button
+        class="deleteButton"
+      >
+        Delete Amber
+      </button>
+      <a
+        class="editTeam"
+        href="/players/edit/1"
+      >
+        Edit Amber
+      </a>
+    </div>
+  </ul>
+</div>
+`;

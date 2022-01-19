@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render out a team list component 1`] = `
+<div>
+  <h1
+    class="detailHeader"
+  >
+    Teams:
+  </h1>
+  <a
+    class="newTeamLink"
+    href="/teams/new"
+  >
+    Add New Team
+  </a>
+  <ul>
+    <div
+      class="teamListContainer"
+    >
+      <a
+        href="/teams/1"
+      >
+        <li>
+          My Team
+        </li>
+      </a>
+      <button
+        class="deleteButton"
+        type="button"
+      >
+        Delete My Team
+      </button>
+      <a
+        class="editTeam"
+        href="/teams/edit/1"
+      >
+        Edit Team
+      </a>
+    </div>
+  </ul>
+</div>
+`;

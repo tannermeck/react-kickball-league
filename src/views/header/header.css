@@ -1,0 +1,25 @@
+.headerContainer {
+    background: linear-gradient(blue, black 85%);
+    opacity: 0.75;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+/* .header.active {
+    color: white;
+} */
+.header {
+    text-decoration: none;
+    color: #B2AA8E;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+.header:hover {
+    color: white;
+}
+
+
